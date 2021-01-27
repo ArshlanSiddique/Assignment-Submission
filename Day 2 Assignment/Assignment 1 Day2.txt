@@ -1,0 +1,25 @@
+
+
+Question 1-;
+
+What is the value of clothes[0] and why?
+
+
+const clothes = ['jacket', 't-shirt'];
+clothes.length = 0;
+console.log(clothes[0]);
+
+
+
+Answer - 1 -:
+
+length property of the array object has a special behavior:
+
+"Reducing the value of the length property has the side-effect of deleting own array elements whose array index is between the old and new length values."
+
+Because of this length behavior,
+ when JavaScript executes
+
+             clothes.length = 0, 
+all the items of the array clothes are deleted.
+ clothes[0] is undefined, because clothes array was emptied.
