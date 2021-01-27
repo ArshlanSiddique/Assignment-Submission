@@ -1,0 +1,33 @@
+
+
+Question 1.-
+ By how many ways we can access elements in the DOM and write about them in brief?
+
+we have over 5 ways to access HTML elements in the DOM — by ID, by class, by HTML tag name, and by selector.
+
+1). Finding HTML Element by Id
+The easiest way is by using the element id.
+example id="someone":
+
+Example
+var myElement = document.getElementById("someone");
+
+2). Finding HTML Elements by Tag Name
+example finds all <p> elements:
+Example
+var x = document.getElementsByTagName("p");
+
+3). Finding HTML Elements by Class Name
+If we want to find all elements with the same class name,
+use getElementsByClassName().
+list of all elements with class="sums".
+
+Example
+var x = document.getElementsByClassName("sums");
+
+4).we can also Find HTML Elements CSS Selectors
+   list of all <p> elements with class="intro".
+
+Example
+var x = document.querySelectorAll("p.intro");
+
