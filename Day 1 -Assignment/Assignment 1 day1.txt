@@ -1,0 +1,21 @@
+Question 1
+What will the code below output to the console and why ?
+console.log(1 + "2" + "2");
+console.log(1 + +"2" + "2");
+console.log(1 + -"1" + "2");
+console.log(+"1" + "1" + "2");
+console.log( "A" - "B" + "2");
+console.log( "A" - "B" + 2);
+
+Answer.1
+The above code will output the following to the console:
+"122"
+"32"
+"02"
+"112"
+"NaN2"
+NaN
+
+Here’s why…
+
+The fundamental issue here is that JavaScript (ECMAScript) is a loosely typed language and it performs automatic type conversion on values to accommodate the operation being performed.
